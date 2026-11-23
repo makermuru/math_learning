@@ -7,53 +7,25 @@
   <meta name="description" content="A friendly visual maths lab for learning measurement, decimals and fractions.">
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="apple-touch-icon" href="icon-192.png">
-  <title>Jane's Math Lab</title>
-  <style>
-    :root{--ink:#24324a;--muted:#64748b;--blue:#3788d8;--blue2:#e7f2ff;--cream:#fffaf0;--line:#e5eaf1;--green:#23845b;--red:#b45353}
-    *{box-sizing:border-box} body{margin:0;background:#f4f7fb;color:var(--ink);font-family:ui-rounded,"Avenir Next",system-ui,-apple-system,sans-serif}
-    .wrap{max-width:760px;margin:auto;padding:18px 16px 36px}
-    header{display:flex;justify-content:space-between;align-items:center;gap:12px;margin:4px 0 18px}
-    h1{font-size:clamp(25px,6vw,34px);margin:0;letter-spacing:-.7px} .sub{color:var(--muted);margin-top:4px;font-size:14px}
-    .pill{background:#e8f6ef;color:#24744f;border-radius:99px;padding:7px 11px;font-size:12px;font-weight:700;white-space:nowrap}
-    nav{display:flex;gap:8px;overflow:auto;padding:2px 0 14px}
-    nav button{border:1px solid var(--line);background:white;border-radius:14px;padding:10px 13px;color:var(--ink);font-weight:700;white-space:nowrap}
-    nav button.active{background:var(--blue);color:white;border-color:var(--blue)}
-    .card{background:white;border:1px solid var(--line);border-radius:22px;padding:18px;margin:0 0 14px;box-shadow:0 5px 18px #20334d08}
-    h2{font-size:20px;margin:0 0 7px} h3{font-size:16px;margin:0 0 12px}
-    .muted{color:var(--muted);font-size:14px;line-height:1.5}
-    .hero{background:linear-gradient(135deg,#eaf4ff,#f8f4ff);border:0}
-    .big{font-size:clamp(32px,9vw,48px);font-weight:850;letter-spacing:-1.5px;line-height:1.2}
-    .blue{color:var(--blue)} .metric{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:10px;margin:14px 0}
-    .metric small{display:block;color:var(--muted);font-size:12px;margin-top:4px}
-    .bar{display:flex;width:100%;height:46px;border-radius:14px;overflow:hidden;background:#e4e9ef;margin:12px 0 7px}
-    .filled{background:#3788d8;display:flex;align-items:center;justify-content:center;color:white;font-weight:800;min-width:0;transition:width .15s}
-    .remaining{background:#e4e9ef;display:flex;align-items:center;justify-content:center;color:#526174;font-weight:700;min-width:0;transition:width .15s}
-    input[type=range]{width:100%;accent-color:var(--blue);margin:12px 0}
-    .ends{display:flex;justify-content:space-between;color:var(--muted);font-size:12px}
-    .chips{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin:12px 0}
-    button{font:inherit;cursor:pointer} .chip{border:1px solid var(--line);background:#fff;border-radius:12px;padding:11px 5px;font-weight:750;color:var(--ink)}
-    .chip.selected{background:var(--blue2);border-color:var(--blue);color:#1c5e9c}
-    .note{background:#fff9e9;border-radius:15px;padding:13px 14px;line-height:1.5;font-size:14px}
-    .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:14px 0}
-    .step{background:#f5f8fc;border-radius:14px;padding:12px;text-align:center}
-    .step b{display:block;font-size:20px;color:var(--blue);margin-bottom:3px}.step span{font-size:12px;color:var(--muted)}
-    .question{border-top:1px solid var(--line);padding:15px 0}.question:first-child{border-top:0}
-    .answers{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:10px}
-    .answer{border:1px solid var(--line);border-radius:12px;background:white;padding:12px 5px;font-weight:750}
-    .answer:active,.chip:active{transform:scale(.98)}
-    .feedback{margin-top:9px;padding:10px 12px;border-radius:12px;font-size:14px;background:#f2f7ff}
-    .good{color:var(--green);background:#edf8f2}.try{color:var(--red);background:#fff1f1}
-    .hide{display:none!important}.footer{text-align:center;color:var(--muted);font-size:12px;padding:10px}
-    .toggle{border:0;background:transparent;color:#2869a6;text-decoration:underline;font-weight:700;padding:8px 0}
-    @media(max-width:420px){.card{padding:15px}.steps{grid-template-columns:1fr 1fr 1fr}.answers{gap:6px}.answer{font-size:13px}}
-  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,400;0,700&family=Antonio:wght@400;700&display=swap">
+  <link rel="stylesheet" href="styles.css">
+  <title>Math Lab</title>
 </head>
 <body>
 <div class="wrap">
   <header>
-    <div><h1>Jane's Math Lab ✨</h1><div class="sub">Explore it. Move it. Understand it.</div></div>
-    <span class="pill">Grade 3 · Ontario</span>
+    <div>
+      <h1>Math Lab ✨</h1>
+      <div class="sub">Explore it. Move it. Understand it.</div>
+    </div>
+    <div class="header-actions">
+      <span class="pill">Grade 3 · Ontario</span>
+      <button id="themeToggle" class="theme-toggle" type="button" aria-label="Switch to dark mode">🌙</button>
+    </div>
   </header>
+
   <nav aria-label="Math topics">
     <button class="active" data-tab="distance">📏 Distance</button>
     <button data-tab="decimals">🔢 Decimals</button>
@@ -66,21 +38,29 @@
       <div class="muted">1 kilometre is the same as 1,000 metres.</div>
       <div class="metric">
         <div><div class="big" id="metres">750 m</div><small>METRES</small></div>
-        <div style="font-size:25px;color:#94a3b8">＝</div>
+        <div class="big-small">＝</div>
         <div><div class="big blue" id="kilometres">0.75 km</div><small>KILOMETRES</small></div>
       </div>
     </div>
+
     <div class="card">
       <h3>How far along the 1 km journey?</h3>
-      <div class="bar"><div class="filled" id="filled" style="width:75%">750 m</div><div class="remaining" id="remaining" style="width:25%">250 m</div></div>
+      <div class="bar">
+        <div class="filled" id="filled" style="width: 75%">750 m</div>
+        <div class="remaining" id="remaining" style="width: 25%">250 m</div>
+      </div>
       <div class="ends"><span>Start · 0 m</span><span>Finish · 1,000 m = 1 km</span></div>
-      <input id="distance" type="range" min="0" max="1000" step="50" value="750" aria-label="Choose distance in metres">
+      <input id="distanceSlider" type="range" min="0" max="1000" step="50" value="750" aria-label="Choose distance in metres">
       <div class="ends"><span>Move the slider</span><b id="sliderValue">750 metres</b><span>1,000 m</span></div>
       <div class="chips">
-        <button class="chip" data-value="250">250 m</button><button class="chip" data-value="500">500 m</button><button class="chip selected" data-value="750">750 m</button><button class="chip" data-value="1000">1,000 m</button>
+        <button class="chip" data-value="250">250 m</button>
+        <button class="chip" data-value="500">500 m</button>
+        <button class="chip selected" data-value="750">750 m</button>
+        <button class="chip" data-value="1000">1,000 m</button>
       </div>
       <div class="note" id="distanceSentence">750 metres is 750 out of 1,000 metres. That is <b>0.75 of a kilometre</b>.</div>
     </div>
+
     <div class="card">
       <h3>Build the idea, one step at a time</h3>
       <div class="steps">
@@ -99,11 +79,13 @@
       <div class="big blue">0.75</div>
       <div class="muted">Seven tenths and five hundredths · seventy-five hundredths</div>
     </div>
+
     <div class="card">
       <h3>Look at the hundred-square</h3>
-      <div id="hundredGrid" style="display:grid;grid-template-columns:repeat(10,1fr);gap:3px;margin:14px 0"></div>
+      <div id="hundredGrid" class="hundred-grid"></div>
       <div class="note">Each tiny square is <b>0.01</b>. 75 shaded squares make <b>0.75</b>. The same amount is 750 metres out of 1,000 metres.</div>
     </div>
+
     <div class="card">
       <h3>These are equal amounts</h3>
       <div class="steps">
@@ -119,56 +101,18 @@
     <div class="card">
       <h2>Mini challenge ⭐</h2>
       <p class="muted">Choose an answer. It's okay to try again!</p>
-      <div id="questions"></div>
+      <div id="quiz" aria-live="polite"></div>
     </div>
+
     <div class="card">
       <h3>Remember</h3>
       <div class="note"><b>1 km = 1,000 m</b><br>To change metres into kilometres, think: “How many parts of 1,000 metres do I have?”</div>
     </div>
   </section>
+
   <div class="footer">Made for curious minds · You can learn one small step at a time 💙</div>
 </div>
-<script>
-const $=s=>document.querySelector(s);
-const distance=$('#distance');
-function updateDistance(v){
-  const n=Number(v), km=n/1000, left=1000-n;
-  $('#metres').textContent=n.toLocaleString()+' m';
-  $('#kilometres').textContent=km.toFixed(2)+' km';
-  $('#filled').style.width=n/10+'%'; $('#remaining').style.width=left/10+'%';
-  $('#filled').textContent=n>=100?n+' m':'';
-  $('#remaining').textContent=left>=100?left+' m':'';
-  $('#sliderValue').textContent=n.toLocaleString()+' metres';
-  $('#distanceSentence').innerHTML=`${n.toLocaleString()} metres is ${n.toLocaleString()} out of 1,000 metres. That is <b>${km.toFixed(2)} of a kilometre</b>.`;
-  document.querySelectorAll('.chip').forEach(b=>b.classList.toggle('selected',Number(b.dataset.value)===n));
-}
-distance.addEventListener('input',e=>updateDistance(e.target.value));
-document.querySelectorAll('.chip').forEach(b=>b.addEventListener('click',()=>{distance.value=b.dataset.value;updateDistance(distance.value)}));
-document.querySelectorAll('nav button').forEach(b=>b.addEventListener('click',()=>{
-  document.querySelectorAll('nav button').forEach(x=>x.classList.toggle('active',x===b));
-  ['distance','decimals','practice'].forEach(id=>$('#'+id).classList.toggle('hide',id!==b.dataset.tab));
-}));
-const grid=$('#hundredGrid'); for(let i=0;i<100;i++){let s=document.createElement('div');s.style.cssText=`aspect-ratio:1;border-radius:3px;background:${i<75?'#3788d8':'#e8edf3'}`;grid.appendChild(s)}
-const qs=[
- {q:'1 kilometre is how many metres?',a:['100 m','1,000 m','10,000 m'],correct:1,why:'1 kilometre is always 1,000 metres.'},
- {q:'500 metres is how many kilometres?',a:['0.5 km','0.05 km','5 km'],correct:0,why:'500 is half of 1,000, so it is half a kilometre: 0.5 km.'},
- {q:'750 metres is how many kilometres?',a:['0.075 km','0.75 km','7.5 km'],correct:1,why:'750 out of 1,000 metres is 0.75 of one kilometre.'},
- {q:'Which is the same as 0.5?',a:['0.05','0.50','0.005'],correct:1,why:'A zero at the end of a decimal does not change its value: 0.5 = 0.50.'}
-];
-const qroot=$('#questions');
-qs.forEach((q,i)=>{
- const box=document.createElement('div');box.className='question';
- const title=document.createElement('b');title.textContent=`${i+1}. ${q.q}`;box.appendChild(title);
- const answers=document.createElement('div');answers.className='answers';
- const feedback=document.createElement('div');feedback.className='feedback hide';
- q.a.forEach((a,j)=>{const btn=document.createElement('button');btn.className='answer';btn.textContent=a;btn.addEventListener('click',()=>{
-   feedback.classList.remove('hide','good','try');
-   if(j===q.correct){feedback.classList.add('good');feedback.textContent='That’s it! 💙 '+q.why}
-   else{feedback.classList.add('try');feedback.textContent='Good try! Look at the 1,000 m journey again and have another go.'}
- });answers.appendChild(btn)});
- box.appendChild(answers);box.appendChild(feedback);qroot.appendChild(box);
-});
-if('serviceWorker' in navigator && location.protocol.startsWith('http')) window.addEventListener('load',()=>navigator.serviceWorker.register('./sw.js').catch(()=>{}));
-</script>
+
+<script src="app.js"></script>
 </body>
 </html>

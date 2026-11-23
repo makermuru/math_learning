@@ -1,0 +1,28 @@
+{
+  "questions": [
+    {
+      "q": "1 kilometre is how many metres?",
+      "answers": ["100 m", "1,000 m", "10,000 m"],
+      "correct": 1,
+      "why": "1 kilometre is always 1,000 metres."
+    },
+    {
+      "q": "500 metres is how many kilometres?",
+      "answers": ["0.5 km", "0.05 km", "5 km"],
+      "correct": 0,
+      "why": "500 is half of 1,000, so it is half a kilometre: 0.5 km."
+    },
+    {
+      "q": "750 metres is how many kilometres?",
+      "answers": ["0.075 km", "0.75 km", "7.5 km"],
+      "correct": 1,
+      "why": "750 out of 1,000 metres is 0.75 of one kilometre."
+    },
+    {
+      "q": "Which is the same as 0.5?",
+      "answers": ["0.05", "0.50", "0.005"],
+      "correct": 1,
+      "why": "A zero at the end of a decimal does not change its value: 0.5 = 0.50."
+    }
+  ]
+}
