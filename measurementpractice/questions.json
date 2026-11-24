@@ -1,28 +1,610 @@
 {
   "questions": [
     {
+      "level": "하",
       "q": "1 kilometre is how many metres?",
       "answers": ["100 m", "1,000 m", "10,000 m"],
       "correct": 1,
       "why": "1 kilometre is always 1,000 metres."
     },
     {
+      "level": "하",
       "q": "500 metres is how many kilometres?",
       "answers": ["0.5 km", "0.05 km", "5 km"],
       "correct": 0,
       "why": "500 is half of 1,000, so it is half a kilometre: 0.5 km."
     },
     {
+      "level": "하",
       "q": "750 metres is how many kilometres?",
       "answers": ["0.075 km", "0.75 km", "7.5 km"],
       "correct": 1,
       "why": "750 out of 1,000 metres is 0.75 of one kilometre."
     },
     {
+      "level": "하",
       "q": "Which is the same as 0.5?",
       "answers": ["0.05", "0.50", "0.005"],
       "correct": 1,
       "why": "A zero at the end of a decimal does not change its value: 0.5 = 0.50."
+    },
+
+    {
+      "level": "중",
+      "q": "2 km is how many metres?",
+      "answers": ["200 m", "2,000 m", "20,000 m"],
+      "correct": 1,
+      "why": "2 km × 1,000 = 2,000 m."
+    },
+    {
+      "level": "중",
+      "q": "3,500 metres is how many kilometres?",
+      "answers": ["0.35 km", "35 km", "3.5 km"],
+      "correct": 2,
+      "why": "3,500 ÷ 1,000 = 3.5, so 3,500 m = 3.5 km."
+    },
+    {
+      "level": "중",
+      "q": "1,250 metres is how many kilometres?",
+      "answers": ["12.5 km", "1.25 km", "0.125 km"],
+      "correct": 1,
+      "why": "1,250 ÷ 1,000 = 1.25 km. Moving the decimal point 3 places to the left."
+    },
+    {
+      "level": "중",
+      "q": "0.6 km is how many metres?",
+      "answers": ["60 m", "600 m", "6,000 m"],
+      "correct": 1,
+      "why": "0.6 × 1,000 = 600 m."
+    },
+    {
+      "level": "중",
+      "q": "2.4 km is how many metres?",
+      "answers": ["240 m", "24,000 m", "2,400 m"],
+      "correct": 2,
+      "why": "2.4 × 1,000 = 2,400 m."
+    },
+    {
+      "level": "중",
+      "q": "4 km 300 m is how many metres?",
+      "answers": ["4,030 m", "43,000 m", "4,300 m"],
+      "correct": 2,
+      "why": "4 km = 4,000 m, and 4,000 + 300 = 4,300 m."
+    },
+    {
+      "level": "중",
+      "q": "Which is the longest?",
+      "answers": ["1.7 km", "1,750 m", "1.8 km"],
+      "correct": 2,
+      "why": "1.8 km = 1,800 m, which is more than 1,750 m and 1.7 km (1,700 m)."
+    },
+    {
+      "level": "중",
+      "q": "Which is the shortest?",
+      "answers": ["0.42 km", "450 m", "0.4 km"],
+      "correct": 2,
+      "why": "0.4 km = 400 m, which is less than 420 m and 450 m."
+    },
+    {
+      "level": "중",
+      "q": "1 km 500 m is how many kilometres?",
+      "answers": ["1.05 km", "15 km", "1.5 km"],
+      "correct": 2,
+      "why": "500 m is half a kilometre, so 1 km 500 m = 1.5 km."
+    },
+    {
+      "level": "중",
+      "q": "1 kilogram is how many grams?",
+      "answers": ["100 g", "1,000 g", "10,000 g"],
+      "correct": 1,
+      "why": "1 kg = 1,000 g."
+    },
+    {
+      "level": "중",
+      "q": "2,500 g is how many kilograms?",
+      "answers": ["25 kg", "0.25 kg", "2.5 kg"],
+      "correct": 2,
+      "why": "2,500 ÷ 1,000 = 2.5 kg."
+    },
+    {
+      "level": "중",
+      "q": "0.75 kg is how many grams?",
+      "answers": ["75 g", "7,500 g", "750 g"],
+      "correct": 2,
+      "why": "0.75 × 1,000 = 750 g."
+    },
+    {
+      "level": "중",
+      "q": "3.2 kg is how many grams?",
+      "answers": ["320 g", "32,000 g", "3,200 g"],
+      "correct": 2,
+      "why": "3.2 × 1,000 = 3,200 g."
+    },
+    {
+      "level": "중",
+      "q": "Which is the heaviest?",
+      "answers": ["1.04 kg", "1,400 g", "0.9 kg"],
+      "correct": 1,
+      "why": "1,400 g = 1.4 kg, which is more than 1.04 kg (1,040 g) and 0.9 kg (900 g)."
+    },
+    {
+      "level": "중",
+      "q": "1 metre is how many centimetres?",
+      "answers": ["10 cm", "100 cm", "1,000 cm"],
+      "correct": 1,
+      "why": "1 m = 100 cm."
+    },
+    {
+      "level": "중",
+      "q": "250 cm is how many metres?",
+      "answers": ["0.25 m", "25 m", "2.5 m"],
+      "correct": 2,
+      "why": "250 ÷ 100 = 2.5 m."
+    },
+    {
+      "level": "중",
+      "q": "0.8 m is how many centimetres?",
+      "answers": ["800 cm", "8 cm", "80 cm"],
+      "correct": 2,
+      "why": "0.8 × 100 = 80 cm."
+    },
+    {
+      "level": "중",
+      "q": "1.35 m is how many centimetres?",
+      "answers": ["13.5 cm", "1,350 cm", "135 cm"],
+      "correct": 2,
+      "why": "1.35 × 100 = 135 cm."
+    },
+    {
+      "level": "중",
+      "q": "6 cm is how many millimetres?",
+      "answers": ["6 mm", "60 mm", "600 mm"],
+      "correct": 1,
+      "why": "1 cm = 10 mm, so 6 cm = 60 mm."
+    },
+    {
+      "level": "중",
+      "q": "45 mm is how many centimetres?",
+      "answers": ["0.45 cm", "450 cm", "4.5 cm"],
+      "correct": 2,
+      "why": "45 ÷ 10 = 4.5 cm."
+    },
+    {
+      "level": "중",
+      "q": "1 litre is how many millilitres?",
+      "answers": ["100 mL", "10,000 mL", "1,000 mL"],
+      "correct": 2,
+      "why": "1 L = 1,000 mL."
+    },
+    {
+      "level": "중",
+      "q": "2,500 mL is how many litres?",
+      "answers": ["2.5 L", "25 L", "0.25 L"],
+      "correct": 0,
+      "why": "2,500 ÷ 1,000 = 2.5 L."
+    },
+    {
+      "level": "중",
+      "q": "0.5 L is how many millilitres?",
+      "answers": ["50 mL", "5,000 mL", "500 mL"],
+      "correct": 2,
+      "why": "0.5 × 1,000 = 500 mL."
+    },
+    {
+      "level": "중",
+      "q": "Which is bigger?",
+      "answers": ["0.65", "0.7", "They are the same"],
+      "correct": 1,
+      "why": "0.7 is 70 hundredths and 0.65 is 65 hundredths, so 0.7 is bigger."
+    },
+    {
+      "level": "중",
+      "q": "Which decimal is the same as 3 tenths?",
+      "answers": ["0.03", "0.3", "3.10"],
+      "correct": 1,
+      "why": "3 tenths is written 0.3."
+    },
+    {
+      "level": "중",
+      "q": "Which fraction is the same as 0.25?",
+      "answers": ["1/4", "1/25", "2/5"],
+      "correct": 0,
+      "why": "0.25 = 25 hundredths = 25/100, which simplifies to 1/4."
+    },
+    {
+      "level": "중",
+      "q": "How many hundredths is 0.07?",
+      "answers": ["7 hundredths", "70 hundredths", "0.7 hundredths"],
+      "correct": 0,
+      "why": "0.07 has 7 in the hundredths place, so it is 7 hundredths."
+    },
+    {
+      "level": "중",
+      "q": "Which is the smallest?",
+      "answers": ["0.3", "0.8", "0.27"],
+      "correct": 2,
+      "why": "0.27 is less than 0.3 (0.30) and 0.8 (0.80)."
+    },
+    {
+      "level": "중",
+      "q": "What is 1.6 + 0.3?",
+      "answers": ["1.9", "1.36", "2.1"],
+      "correct": 0,
+      "why": "Line up the decimal points: 1.6 + 0.3 = 1.9."
+    },
+    {
+      "level": "중",
+      "q": "What is 2.5 + 0.75?",
+      "answers": ["3.25", "3.2", "2.575"],
+      "correct": 0,
+      "why": "2.50 + 0.75 = 3.25. Write 2.5 as 2.50 first."
+    },
+    {
+      "level": "중",
+      "q": "What is 5.4 − 2.9?",
+      "answers": ["2.5", "3.5", "2.6"],
+      "correct": 0,
+      "why": "5.4 − 2.9 = 2.5. Think of it as 5 tenths 4 minus 2 tenths 9, or count: 2.9 + 2.5 = 5.4."
+    },
+    {
+      "level": "중",
+      "q": "What is 0.6 × 10?",
+      "answers": ["0.06", "6", "60"],
+      "correct": 1,
+      "why": "Multiplying by 10 moves the decimal point one place to the right: 0.6 × 10 = 6."
+    },
+    {
+      "level": "중",
+      "q": "What is 4.7 ÷ 10?",
+      "answers": ["0.47", "47", "4.07"],
+      "correct": 0,
+      "why": "Dividing by 10 moves the decimal point one place to the left: 4.7 ÷ 10 = 0.47."
+    },
+    {
+      "level": "중",
+      "q": "What is 0.25 × 100?",
+      "answers": ["2.5", "0.025", "25"],
+      "correct": 2,
+      "why": "Multiplying by 100 moves the decimal point two places to the right: 0.25 × 100 = 25."
+    },
+    {
+      "level": "중",
+      "q": "Ben runs 1.2 km. How many metres is that?",
+      "answers": ["12 m", "120 m", "1,200 m"],
+      "correct": 2,
+      "why": "1.2 km × 1,000 = 1,200 m."
+    },
+    {
+      "level": "중",
+      "q": "A bottle has 1.5 L of juice. Ana drinks 400 mL. How many mL are left?",
+      "answers": ["1,100 mL", "1,900 mL", "1.9 mL"],
+      "correct": 0,
+      "why": "1.5 L = 1,500 mL. 1,500 − 400 = 1,100 mL."
+    },
+    {
+      "level": "중",
+      "q": "A rope is 3 m long. Sam cuts off 75 cm. How many cm are left?",
+      "answers": ["225 cm", "2.25 cm", "75 cm"],
+      "correct": 0,
+      "why": "3 m = 300 cm. 300 − 75 = 225 cm."
+    },
+    {
+      "level": "중",
+      "q": "A box weighs 2.4 kg. Mia adds 350 g of tape. What is the total in grams?",
+      "answers": ["2,750 g", "2,040 g", "2.75 g"],
+      "correct": 0,
+      "why": "2.4 kg = 2,400 g. 2,400 + 350 = 2,750 g."
+    },
+
+    {
+      "level": "상중",
+      "q": "Which is the same as 1 km 25 m?",
+      "answers": ["1.25 km", "1.025 km", "125 km"],
+      "correct": 1,
+      "why": "1 km 25 m = 1,025 m = 1.025 km."
+    },
+    {
+      "level": "상중",
+      "q": "Which is the same as 3.05 kg?",
+      "answers": ["3,050 g", "3,005 g", "30.5 g"],
+      "correct": 0,
+      "why": "3.05 × 1,000 = 3,050 g."
+    },
+    {
+      "level": "상중",
+      "q": "Which is the same as 0.08 m?",
+      "answers": ["80 cm", "0.8 cm", "8 cm"],
+      "correct": 2,
+      "why": "0.08 × 100 = 8 cm."
+    },
+    {
+      "level": "상중",
+      "q": "Which is the same as 0.125 L?",
+      "answers": ["12.5 mL", "1,250 mL", "125 mL"],
+      "correct": 2,
+      "why": "0.125 × 1,000 = 125 mL."
+    },
+    {
+      "level": "상중",
+      "q": "A ribbon is 2.8 m long. Sam uses 135 cm. How many cm are left?",
+      "answers": ["145 cm", "153 cm", "1.45 cm"],
+      "correct": 0,
+      "why": "2.8 m = 280 cm. 280 − 135 = 145 cm."
+    },
+    {
+      "level": "상중",
+      "q": "A jug holds 2 L. 1 L 250 mL is poured out. How many mL remain?",
+      "answers": ["750 mL", "3,250 mL", "0.75 mL"],
+      "correct": 0,
+      "why": "2 L = 2,000 mL. 2,000 − 1,250 = 750 mL."
+    },
+    {
+      "level": "상중",
+      "q": "Mia buys 3 bags of rice. Each bag is 1.5 kg. What is the total in grams?",
+      "answers": ["4,500 g", "45 g", "150 g"],
+      "correct": 0,
+      "why": "3 × 1.5 kg = 4.5 kg = 4,500 g."
+    },
+    {
+      "level": "상중",
+      "q": "A snail moves 0.6 m in 1 minute. How far does it go in 5 minutes?",
+      "answers": ["30 cm", "3 m", "0.3 m"],
+      "correct": 1,
+      "why": "0.6 × 5 = 3 m. (That is 300 cm.)"
+    },
+    {
+      "level": "상중",
+      "q": "Which is the biggest?",
+      "answers": ["1,450 m", "1.5 km", "1.04 km"],
+      "correct": 1,
+      "why": "1.5 km = 1,500 m, which is bigger than 1,450 m and 1.04 km (1,040 m)."
+    },
+    {
+      "level": "상중",
+      "q": "Which mass is the smallest?",
+      "answers": ["0.9 kg", "850 g", "1.2 kg"],
+      "correct": 1,
+      "why": "850 g is less than 0.9 kg (900 g) and 1.2 kg (1,200 g)."
+    },
+    {
+      "level": "상중",
+      "q": "Round 3.46 km to the nearest tenth of a kilometre.",
+      "answers": ["3.4 km", "3.5 km", "3 km"],
+      "correct": 1,
+      "why": "The digit after the tenths is 6, which is 5 or more, so round up: 3.5 km."
+    },
+    {
+      "level": "상중",
+      "q": "Which decimal is between 0.4 and 0.5?",
+      "answers": ["0.36", "0.46", "0.5"],
+      "correct": 1,
+      "why": "0.46 is more than 0.4 (0.40) and less than 0.5 (0.50)."
+    },
+    {
+      "level": "상중",
+      "q": "What is 0.3 of 1 kilometre, in metres?",
+      "answers": ["30 m", "300 m", "3,000 m"],
+      "correct": 1,
+      "why": "0.3 × 1,000 = 300 m."
+    },
+    {
+      "level": "상중",
+      "q": "What is 1/5 of 1 kilogram, in grams?",
+      "answers": ["20 g", "200 g", "500 g"],
+      "correct": 1,
+      "why": "1 kg = 1,000 g. 1,000 ÷ 5 = 200 g."
+    },
+    {
+      "level": "상중",
+      "q": "Which is the same as 4/5 of a litre?",
+      "answers": ["400 mL", "80 mL", "800 mL"],
+      "correct": 2,
+      "why": "1 L = 1,000 mL. 1,000 ÷ 5 × 4 = 800 mL."
+    },
+    {
+      "level": "상중",
+      "q": "Which fraction is the same as 0.375?",
+      "answers": ["3/8", "3/10", "3/75"],
+      "correct": 0,
+      "why": "0.375 = 375/1,000. Divide top and bottom by 125: 3/8."
+    },
+    {
+      "level": "상중",
+      "q": "Which is the same as 0.2 of a metre?",
+      "answers": ["2 cm", "20 cm", "200 cm"],
+      "correct": 1,
+      "why": "0.2 m × 100 = 20 cm."
+    },
+    {
+      "level": "상중",
+      "q": "Sara's pencil is 14.5 cm long. How long is it in millimetres?",
+      "answers": ["1.45 mm", "1,450 mm", "145 mm"],
+      "correct": 2,
+      "why": "1 cm = 10 mm. 14.5 × 10 = 145 mm."
+    },
+    {
+      "level": "상중",
+      "q": "A car drives 12.6 km on Monday and 850 m on Tuesday. What is the total in km?",
+      "answers": ["13.45 km", "12.6 km", "13.4 km"],
+      "correct": 0,
+      "why": "850 m = 0.85 km. 12.6 + 0.85 = 13.45 km."
+    },
+    {
+      "level": "상중",
+      "q": "Ella has 2 L 40 mL of juice. She pours 290 mL into each of 3 cups. How many mL are left?",
+      "answers": ["1,170 mL", "1,390 mL", "2,190 mL"],
+      "correct": 0,
+      "why": "2 L 40 mL = 2,040 mL. 3 cups × 290 mL = 870 mL. 2,040 − 870 = 1,170 mL."
+    },
+    {
+      "level": "상중",
+      "q": "Which is the same as 2.05 km?",
+      "answers": ["2,500 m", "2,050 m", "205 m"],
+      "correct": 1,
+      "why": "2.05 × 1,000 = 2,050 m."
+    },
+    {
+      "level": "상중",
+      "q": "A bag of sand weighs 1.25 kg. What is the total weight of 8 bags?",
+      "answers": ["10 kg", "12.5 kg", "1.25 kg"],
+      "correct": 0,
+      "why": "8 × 1.25 = 10 kg."
+    },
+
+    {
+      "level": "상",
+      "q": "A tank has 3.6 L of water. 1,850 mL is used. How many mL are left?",
+      "answers": ["1,750 mL", "1,850 mL", "2,250 mL"],
+      "correct": 0,
+      "why": "3.6 L = 3,600 mL. 3,600 − 1,850 = 1,750 mL."
+    },
+    {
+      "level": "상",
+      "q": "Four friends share 2.5 kg of apples equally. How many grams does each friend get?",
+      "answers": ["625 g", "62.5 g", "6,250 g"],
+      "correct": 0,
+      "why": "2.5 kg = 2,500 g. 2,500 ÷ 4 = 625 g."
+    },
+    {
+      "level": "상",
+      "q": "A road is 4.2 km long. 1.35 km is finished. How many metres are left?",
+      "answers": ["2,850 m", "2,805 m", "285 m"],
+      "correct": 0,
+      "why": "4.2 − 1.35 = 2.85 km = 2,850 m."
+    },
+    {
+      "level": "상",
+      "q": "A recipe needs 0.75 kg of flour for 6 muffins. How many grams are needed for 2 muffins?",
+      "answers": ["250 g", "125 g", "75 g"],
+      "correct": 0,
+      "why": "6 muffins ÷ 3 = 2 muffins, so divide 0.75 kg by 3: 0.25 kg = 250 g."
+    },
+    {
+      "level": "상",
+      "q": "A wooden plank is 1.8 m long. You cut 4 pieces, each 45 cm long. How many cm are left over?",
+      "answers": ["0 cm", "18 cm", "45 cm"],
+      "correct": 0,
+      "why": "4 × 45 cm = 180 cm = 1.8 m. The whole plank is used up, so 0 cm is left."
+    },
+    {
+      "level": "상",
+      "q": "Which is correct?  0.6 kg ___ 650 g",
+      "answers": ["0.6 kg < 650 g", "0.6 kg > 650 g", "0.6 kg = 650 g"],
+      "correct": 0,
+      "why": "0.6 kg = 600 g, and 600 g is less than 650 g."
+    },
+    {
+      "level": "상",
+      "q": "Which is the largest?",
+      "answers": ["0.35 km", "3,450 m", "0.4 km"],
+      "correct": 1,
+      "why": "3,450 m = 3.45 km. That is larger than 0.4 km (400 m) and 0.35 km (350 m)."
+    },
+    {
+      "level": "상",
+      "q": "What is 0.6 × 0.5?",
+      "answers": ["0.3", "3", "0.03"],
+      "correct": 0,
+      "why": "6 tenths × 5 tenths = 30 hundredths = 0.3."
+    },
+    {
+      "level": "상",
+      "q": "What is 2.4 ÷ 0.6?",
+      "answers": ["0.4", "4", "40"],
+      "correct": 1,
+      "why": "Make both numbers whole by multiplying by 10: 24 ÷ 6 = 4."
+    },
+    {
+      "level": "상",
+      "q": "A water bottle holds 0.75 L. How many bottles are needed to fill a 3 L jug?",
+      "answers": ["2 bottles", "4 bottles", "4.5 bottles"],
+      "correct": 1,
+      "why": "3 ÷ 0.75 = 4. Four bottles fill the jug exactly."
+    },
+    {
+      "level": "상",
+      "q": "A ribbon is 5 m long. You cut as many 0.4 m pieces as you can. How many whole pieces do you get?",
+      "answers": ["12 pieces", "12.5 pieces", "13 pieces"],
+      "correct": 0,
+      "why": "5 ÷ 0.4 = 12.5, but you can only get 12 whole pieces (12 × 0.4 = 4.8 m, with 0.2 m left over)."
+    },
+    {
+      "level": "상",
+      "q": "A box weighs 1 kg 35 g. Another box weighs 80 g more. What is the total weight in kg?",
+      "answers": ["2.15 kg", "1.115 kg", "2.115 kg"],
+      "correct": 0,
+      "why": "1 kg 35 g = 1,035 g. The second box is 1,035 + 80 = 1,115 g. Total: 1,035 + 1,115 = 2,150 g = 2.15 kg."
+    },
+    {
+      "level": "상",
+      "q": "A runner completes 3 laps of 0.8 km each, then 650 m more. What is the total distance in km?",
+      "answers": ["3.05 km", "2.45 km", "3.45 km"],
+      "correct": 2,
+      "why": "3 × 0.8 = 2.4 km. 650 m = 0.65 km. 2.4 + 0.65 = 3.05 km."
+    },
+
+    {
+      "level": "중",
+      "q": "A rectangle is 5 cm long and 2 cm wide. What is its perimeter?",
+      "answers": ["10 cm", "14 cm", "7 cm"],
+      "correct": 1,
+      "why": "Add all four sides: 5 + 2 + 5 + 2 = 14 cm."
+    },
+    {
+      "level": "중",
+      "q": "A square has sides of 6 cm. What is its perimeter?",
+      "answers": ["12 cm", "36 cm", "24 cm"],
+      "correct": 2,
+      "why": "A square has 4 equal sides: 4 × 6 = 24 cm."
+    },
+    {
+      "level": "상중",
+      "q": "A rectangle is 1 m 20 cm long and 80 cm wide. What is its perimeter in cm?",
+      "answers": ["400 cm", "200 cm", "280 cm"],
+      "correct": 0,
+      "why": "Length 120 cm + width 80 cm = 200 cm. Two of each side: 2 × 200 = 400 cm."
+    },
+    {
+      "level": "중",
+      "q": "What time is it 35 minutes after 2:40?",
+      "answers": ["3:15", "2:75", "3:05"],
+      "correct": 0,
+      "why": "2:40 + 20 min = 3:00, and 15 more minutes = 3:15."
+    },
+    {
+      "level": "중",
+      "q": "How many minutes are there from 9:20 to 10:05?",
+      "answers": ["45 minutes", "65 minutes", "55 minutes"],
+      "correct": 0,
+      "why": "9:20 to 10:00 is 40 minutes, and 10:00 to 10:05 is 5 more: 45 minutes."
+    },
+    {
+      "level": "상중",
+      "q": "How many minutes are in 2 hours 15 minutes?",
+      "answers": ["215 minutes", "135 minutes", "75 minutes"],
+      "correct": 1,
+      "why": "2 hours × 60 = 120 minutes, and 120 + 15 = 135 minutes."
+    },
+    {
+      "level": "상",
+      "q": "A movie starts at 1:50 pm and lasts 1 hour 35 minutes. When does it end?",
+      "answers": ["3:25 pm", "2:85 pm", "2:25 pm"],
+      "correct": 0,
+      "why": "1:50 + 1 hour = 2:50. Add 35 minutes: 3:25 pm."
+    },
+    {
+      "level": "상",
+      "q": "Lena leaves at 8:45 and arrives at 9:10. How long is her trip?",
+      "answers": ["25 minutes", "35 minutes", "15 minutes"],
+      "correct": 0,
+      "why": "8:45 to 9:00 is 15 minutes, and 9:00 to 9:10 is 10 more: 25 minutes."
+    },
+    {
+      "level": "중",
+      "q": "A jug has 1 L of water. You pour out 250 mL. How much is left?",
+      "answers": ["750 mL", "250 mL", "1,250 mL"],
+      "correct": 0,
+      "why": "1 L = 1,000 mL. 1,000 − 250 = 750 mL."
     }
   ]
 }

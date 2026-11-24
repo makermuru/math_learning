@@ -39,7 +39,7 @@ themeToggle.addEventListener('click', () => {
 
 /* ---------- Tabs ---------- */
 
-const TABS = ['distance', 'decimals', 'practice'];
+const TABS = ['distance', 'decimals', 'concepts', 'practice'];
 
 $$('nav button').forEach((button) => {
   button.addEventListener('click', () => {
